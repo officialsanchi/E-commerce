@@ -2,12 +2,13 @@ package BuyingOfGoodies.E_commerecApplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-public class ECommerceApplication {
-
+@EnableJpaAuditing
+public class EcommerceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run( ECommerceApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
-
 }
+
